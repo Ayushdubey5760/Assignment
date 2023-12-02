@@ -1,0 +1,35 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class SimpleCollectionExample {
+    public static void main(String[] args) {
+        // store the names
+        List<String> namesList = new ArrayList<>();
+
+        // Add names
+        namesList.add("A");
+        namesList.add("B");
+        namesList.add("C");
+        namesList.add("D");
+
+        // Display the contents of the list
+        System.out.println("Names in the list:");
+        for (String name : namesList) {
+            System.out.println(name);
+        }
+
+        // Check if a specific name is in the list
+        String searchName = "B";
+        if (namesList.contains(searchName)) {
+            System.out.println(searchName + " is in the list.");
+        } else {
+            System.out.println(searchName + " is not in the list.");
+        }
+
+        // Display the updated list
+        System.out.println("\Updated names in the list:");
+        for (String name : namesList) {
+            System.out.println(name);
+        }
+    }
+}
